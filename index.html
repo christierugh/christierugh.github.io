@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Christie Rugh — Commercial &amp; Global Growth Executive</title>
+<meta name="description" content="Christie Rugh — commercial and global growth executive. 20+ years building e-commerce, marketplace, and cross-border operations from zero to scale." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   CONFIG — quick edits live here and in the <script> at bottom
+   ============================================================ */
+:root{
+  --ink:#0B0E14;
+  --ink-2:#11161F;
+  --ink-3:#1B2230;
+  --paper:#FFFFFF;
+  --paper-2:#F3F4F6;
+  --paper-3:#E7E9EE;
+  --accent:#FF3D2E;          /* vermilion — the loud commercial accent */
+  --accent-dark:#E22A1C;
+  --muted:#6B7280;
+  --muted-light:#9AA3B2;
+  --line:#E3E6EC;
+  --line-dark:#262E3C;
+  --maxw:1180px;
+  --r:18px;
+  --shadow:0 24px 60px -20px rgba(11,14,20,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:var(--ink);background:var(--paper);line-height:1.6;
+  overflow-x:hidden;font-feature-settings:"ss01","cv11";
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+h1,h2,h3,h4,.display{font-family:'Archivo',sans-serif;line-height:1.02;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+section{position:relative}
+
+/* reveal (only hidden when JS runs) */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- scroll progress + nav ---------- */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:120;transition:width .1s linear}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(11,14,20,.82);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-dark);transition:transform .35s ease}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:11px;color:#fff;font-family:'Archivo';font-weight:800;letter-spacing:-.01em}
+.brand .mono{width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:900}
+.brand small{display:block;font-family:'Inter';font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-light)}
+.navlinks{display:flex;align-items:center;gap:28px}
+.navlinks a{color:#C7CDD8;font-size:14px;font-weight:500;letter-spacing:.01em;transition:color .2s;position:relative}
+.navlinks a:hover{color:#fff}
+.navlinks a.active{color:#fff}
+.navlinks a.active::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;background:var(--accent)}
+.nav-cta{background:var(--accent);color:#fff !important;padding:10px 18px;border-radius:999px;font-weight:700 !important;font-size:13.5px}
+.nav-cta:hover{background:var(--accent-dark)}
+.navlinks a.nav-cta.active::after{display:none}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.burger span{width:24px;height:2px;background:#fff;transition:.3s}
+
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:#fff;padding:138px 0 78px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 500px at 88% -8%,rgba(255,61,46,.20),transparent 60%),
+  radial-gradient(700px 460px at -5% 110%,rgba(45,91,255,.12),transparent 55%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.35fr .9fr;gap:54px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+.hero h1{font-size:clamp(40px,6.4vw,82px);font-weight:900;letter-spacing:-.035em}
+.hero h1 .pop{color:var(--accent)}
+.hero .lede{font-size:clamp(16px,1.5vw,19px);color:#C7CDD8;max-width:560px;margin-top:22px;line-height:1.55}
+.hero .lede b{color:#fff;font-weight:600}
+.hero-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chip{border:1px solid var(--line-dark);background:rgba(255,255,255,.03);color:#D5DAE3;padding:9px 15px;border-radius:999px;
+  font-size:13px;font-weight:500}
+.chip b{color:#fff;font-weight:700}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:999px;font-weight:700;font-size:14.5px;
+  cursor:pointer;border:1px solid transparent;transition:transform .18s,background .18s,border-color .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dark)}
+.btn-ghost{background:transparent;color:#fff;border-color:var(--line-dark)}
+.btn-ghost:hover{border-color:#fff}
+.btn svg{width:17px;height:17px}
+
+/* hero portrait */
+.portrait-wrap{justify-self:center;position:relative}
+.portrait{width:300px;height:300px;border-radius:50%;position:relative;overflow:hidden;
+  background:linear-gradient(150deg,var(--ink-3),var(--ink-2));border:1px solid var(--line-dark);box-shadow:var(--shadow)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait .mono-fallback{position:absolute;inset:0;display:grid;place-items:center;font-family:'Archivo';font-weight:900;
+  font-size:120px;color:var(--accent);letter-spacing:-.04em;background:
+  radial-gradient(circle at 50% 35%,rgba(255,61,46,.18),transparent 60%)}
+.portrait-ring{position:absolute;inset:-16px;border:2px dashed rgba(255,255,255,.16);border-radius:50%;
+  animation:spin 38s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portrait-badge{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;
+  font-size:12px;font-weight:700;letter-spacing:.04em;padding:8px 16px;border-radius:999px;white-space:nowrap;box-shadow:var(--shadow)}
+
+/* ---------- numbers band ---------- */
+.numbers{background:var(--accent);color:#fff;padding:64px 0}
+.numbers .head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:40px;flex-wrap:wrap}
+.numbers h2{font-size:clamp(26px,3vw,38px);font-weight:800;color:#fff;max-width:560px}
+.numbers .head p{color:rgba(255,255,255,.85);font-size:14.5px;max-width:330px;font-weight:500}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,.22);border-radius:16px;overflow:hidden}
+.num-cell{background:var(--accent);padding:26px 22px}
+.num-cell .num{font-family:'Archivo';font-weight:900;font-size:clamp(34px,4.4vw,52px);letter-spacing:-.04em;line-height:1}
+.num-cell .lbl{font-size:13px;font-weight:500;color:rgba(255,255,255,.92);margin-top:10px;line-height:1.35}
+
+/* ---------- generic section ---------- */
+.sec{padding:96px 0}
+.sec-tag{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.sec-title{font-size:clamp(30px,4vw,52px);font-weight:900;letter-spacing:-.03em;max-width:780px}
+.sec-sub{color:var(--muted);font-size:16.5px;max-width:640px;margin-top:18px}
+
+/* about */
+.about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about p.big{font-size:clamp(20px,2.2vw,27px);font-weight:500;line-height:1.42;letter-spacing:-.01em}
+.about p.big .hl{background:linear-gradient(transparent 62%,rgba(255,61,46,.22) 0);padding:0 2px}
+.about .quote{margin-top:26px;border-left:3px solid var(--accent);padding-left:20px;color:var(--muted);font-style:italic;font-size:15.5px}
+.strengths{display:flex;flex-wrap:wrap;gap:10px}
+.tag{border:1px solid var(--line);background:var(--paper-2);padding:9px 15px;border-radius:999px;font-size:13.5px;font-weight:600}
+.tag::before{content:"●";color:var(--accent);margin-right:7px;font-size:9px;vertical-align:middle}
+
+/* expertise cards */
+.expertise{background:var(--ink);color:#fff}
+.expertise .sec-title{color:#fff}
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.exp-card{background:var(--ink-2);border:1px solid var(--line-dark);border-radius:var(--r);padding:30px;transition:transform .25s,border-color .25s}
+.exp-card:hover{transform:translateY(-6px);border-color:var(--accent)}
+.exp-card .n{font-family:'Archivo';font-weight:900;font-size:15px;color:var(--accent);letter-spacing:.04em}
+.exp-card h3{font-size:21px;font-weight:800;margin:14px 0 6px}
+.exp-card .desc{color:var(--muted-light);font-size:14px;margin-bottom:18px}
+.exp-card ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.exp-card li{font-size:14px;color:#D5DAE3;padding-left:20px;position:relative}
+.exp-card li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;background:var(--accent);border-radius:2px;transform:rotate(45deg)}
+
+/* experience timeline / accordion */
+.work{background:var(--paper)}
+.work-list{margin-top:50px;border-top:1px solid var(--line)}
+.role{border-bottom:1px solid var(--line)}
+.role-head{display:grid;grid-template-columns:118px 1fr auto;gap:24px;align-items:center;padding:26px 6px;cursor:pointer;
+  transition:background .2s}
+.role-head:hover{background:var(--paper-2)}
+.role-yr{font-family:'Archivo';font-weight:800;font-size:15px;color:var(--accent)}
+.role-main h3{font-size:clamp(19px,2vw,24px);font-weight:800;letter-spacing:-.01em}
+.role-main .co{color:var(--muted);font-size:14.5px;font-weight:600;margin-top:3px}
+.role-main .co b{color:var(--ink)}
+.role-toggle{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;
+  flex:none;transition:.25s;font-size:20px;color:var(--accent)}
+.role.open .role-toggle{background:var(--accent);color:#fff;border-color:var(--accent);transform:rotate(45deg)}
+.role-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1)}
+.role-body-inner{padding:0 6px 30px;display:grid;grid-template-columns:118px 1fr;gap:24px}
+.role-body .headline{grid-column:2;font-size:16px;font-weight:600;color:var(--ink);margin-bottom:14px;line-height:1.5}
+.role-body .headline .hl{color:var(--accent);font-weight:800}
+.role-body ul{grid-column:2;list-style:none;display:grid;gap:11px}
+.role-body li{font-size:14.5px;color:#374151;padding-left:22px;position:relative;line-height:1.5}
+.role-body li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:800}
+
+/* case study */
+.case{background:var(--ink);color:#fff;overflow:hidden}
+.case .sec-title{color:#fff}
+.case-stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:46px 0 40px}
+.case-stat{border:1px solid var(--line-dark);border-radius:14px;padding:22px;background:var(--ink-2)}
+.case-stat .v{font-family:'Archivo';font-weight:900;font-size:clamp(28px,3.4vw,40px);color:var(--accent);letter-spacing:-.03em}
+.case-stat .k{font-size:13px;color:var(--muted-light);margin-top:7px}
+.tabs{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px}
+.tab{border:1px solid var(--line-dark);background:transparent;color:#C7CDD8;padding:11px 17px;border-radius:999px;
+  font-family:'Inter';font-size:13.5px;font-weight:600;cursor:pointer;transition:.2s}
+.tab:hover{border-color:#fff;color:#fff}
+.tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.tab .tnum{font-family:'Archivo';font-weight:900;margin-right:7px;opacity:.7}
+.panel{display:none;background:var(--ink-2);border:1px solid var(--line-dark);border-radius:var(--r);padding:34px}
+.panel.active{display:block;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.panel h3{font-size:23px;font-weight:800;margin-bottom:6px}
+.panel .p-sub{color:var(--accent);font-size:14px;font-weight:600;margin-bottom:18px}
+.panel-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.panel-cols h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-light);margin-bottom:12px;font-family:'Inter';font-weight:700}
+.panel ul{list-style:none;display:grid;gap:10px}
+.panel li{font-size:14.5px;color:#D5DAE3;padding-left:20px;position:relative;line-height:1.5}
+.panel li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;background:var(--accent);border-radius:50%}
+
+/* recommendations */
+.praise{background:var(--paper-2)}
+.rec-track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:50px 0 14px;scrollbar-width:none}
+.rec-track::-webkit-scrollbar{display:none}
+.rec{scroll-snap-align:start;flex:0 0 clamp(300px,46%,520px);background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);padding:34px;box-shadow:0 10px 30px -18px rgba(11,14,20,.2)}
+.rec .theme{font-family:'Archivo';font-weight:800;color:var(--accent);font-size:13px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:14px}
+.rec .mark{font-family:'Archivo';font-weight:900;font-size:54px;color:var(--paper-3);line-height:.6;height:26px}
+.rec blockquote{font-size:16px;line-height:1.55;color:#2A2F3A;font-weight:500}
+.rec .who{margin-top:20px;display:flex;align-items:center;gap:13px;border-top:1px solid var(--line);padding-top:18px}
+.rec .who .av{width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+  font-family:'Archivo';font-weight:800;font-size:15px;flex:none}
+.rec .who .nm{font-weight:700;font-size:14.5px}
+.rec .who .rl{font-size:13px;color:var(--muted)}
+.rec-nav{display:flex;gap:10px;margin-top:18px}
+.rec-btn{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--paper);cursor:pointer;
+  display:grid;place-items:center;font-size:18px;transition:.2s;color:var(--ink)}
+.rec-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* domain + education split */
+.split{display:grid;grid-template-columns:1.25fr 1fr;gap:0}
+.domain{background:var(--ink);color:#fff;padding:90px 0}
+.domain .inner{max-width:calc(var(--maxw)/2 + 80px);margin-left:auto;padding:0 28px 0 0;width:100%}
+.domain .sec-title{color:#fff;font-size:clamp(26px,3vw,40px)}
+.domain ul{list-style:none;margin-top:26px;display:grid;gap:14px}
+.domain li{font-size:15px;color:#D5DAE3;padding-left:26px;position:relative;line-height:1.5}
+.domain li::before{content:"✦";position:absolute;left:0;color:var(--accent)}
+.edu{background:var(--accent);color:#fff;padding:90px 0}
+.edu .inner{max-width:calc(var(--maxw)/2 + 80px);margin-right:auto;padding:0 0 0 28px;width:100%}
+.edu .sec-title{color:#fff;font-size:clamp(26px,3vw,40px)}
+.edu-item{margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.3)}
+.edu-item h3{font-size:20px;font-weight:800}
+.edu-item .badge{display:inline-block;background:rgba(255,255,255,.18);padding:4px 12px;border-radius:999px;font-size:12.5px;font-weight:700;margin:8px 0}
+.edu-item p{color:rgba(255,255,255,.9);font-size:14.5px}
+.speaking{margin-top:34px}
+.speaking h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-family:'Inter';font-weight:700;color:rgba(255,255,255,.85);margin-bottom:14px}
+.feat-grid{display:flex;flex-wrap:wrap;gap:9px}
+.feat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:8px 13px;border-radius:8px;font-size:12.5px;font-weight:600}
+
+/* contact */
+.contact{background:var(--ink);color:#fff;padding:104px 0;text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 380px at 50% -10%,rgba(255,61,46,.20),transparent 60%)}
+.contact .wrap{position:relative}
+.contact .sec-tag{color:var(--accent)}
+.contact h2{font-size:clamp(34px,5.5vw,72px);font-weight:900;letter-spacing:-.035em;max-width:880px;margin:0 auto}
+.contact h2 .pop{color:var(--accent)}
+.contact p{color:#C7CDD8;font-size:17px;max-width:560px;margin:22px auto 0}
+.contact-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:38px}
+.footer-meta{margin-top:52px;padding-top:28px;border-top:1px solid var(--line-dark);display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted-light);font-size:13.5px}
+.footer-meta .brand{color:#fff}
+
+/* ---------- responsive ---------- */
+@media(max-width:920px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .portrait-wrap{order:-1}
+  .portrait{width:230px;height:230px}
+  .portrait .mono-fallback{font-size:92px}
+  .num-grid{grid-template-columns:repeat(2,1fr)}
+  .exp-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .case-stat-strip{grid-template-columns:repeat(2,1fr)}
+  .panel-cols{grid-template-columns:1fr;gap:22px}
+  .split{grid-template-columns:1fr}
+  .domain .inner,.edu .inner{max-width:var(--maxw);padding:0 28px}
+  .navlinks{position:fixed;inset:68px 0 auto 0;background:var(--ink);flex-direction:column;gap:0;
+    padding:8px 0 18px;border-bottom:1px solid var(--line-dark);transform:translateY(-130%);transition:transform .35s;align-items:stretch}
+  .navlinks.show{transform:none}
+  .navlinks a{padding:14px 28px}
+  .navlinks a.active::after{display:none}
+  .nav-cta{margin:8px 28px 0;text-align:center}
+  .burger{display:flex}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .role-head{grid-template-columns:1fr auto;gap:14px}
+  .role-yr{grid-column:1;font-size:13px}
+  .role-body-inner{grid-template-columns:1fr}
+  .role-body .headline,.role-body ul{grid-column:1}
+  .num-cell .num{font-size:38px}
+  .case-stat-strip{grid-template-columns:1fr 1fr}
+}
+/* ===== V2 interactive modules ===== */
+.v2-tool{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.v2-head{max-width:840px}
+.v2-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:46px;align-items:center}
+.calc-controls{display:grid;gap:24px}
+.calc-field label{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:14px;margin-bottom:11px;color:var(--ink)}
+.calc-field label .val{font-family:'Archivo';font-weight:800;color:var(--accent);font-size:16px}
+input[type=range].v2-range{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:999px;background:var(--paper-3);outline:none;cursor:pointer}
+input[type=range].v2-range::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--accent);cursor:pointer;border:3px solid #fff;box-shadow:0 2px 8px rgba(255,61,46,.5)}
+input[type=range].v2-range::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--accent);cursor:pointer;border:3px solid #fff}
+.calc-results{background:var(--ink);color:#fff;border-radius:var(--r);padding:34px;box-shadow:var(--shadow)}
+.calc-results .big{font-family:'Archivo';font-weight:900;font-size:clamp(38px,5vw,58px);color:var(--accent);letter-spacing:-.03em;line-height:1}
+.calc-results .rlabel{color:var(--muted-light);font-size:13px;margin-top:7px}
+.calc-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px;border-top:1px solid var(--line-dark);padding-top:22px}
+.calc-row .v{font-family:'Archivo';font-weight:800;font-size:26px;color:#fff}
+.calc-row .v.pos{color:var(--accent)}
+.calc-bar{height:10px;border-radius:999px;background:var(--ink-3);margin-top:18px;overflow:hidden}
+.calc-bar span{display:block;height:100%;background:var(--accent);width:0;transition:width .45s cubic-bezier(.16,1,.3,1)}
+.calc-note{font-size:12.5px;color:var(--muted-light);margin-top:22px;line-height:1.5}
+.v2-map{background:var(--ink);color:#fff}
+.v2-map .sec-title,.v2-map .sec-tag{color:#fff}
+.map-wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:34px;margin-top:46px;align-items:center}
+.map-stage{position:relative;background:linear-gradient(160deg,var(--ink-2),#0b1018);border:1px solid var(--line-dark);border-radius:var(--r);padding:8px;aspect-ratio:7/5}
+.map-stage svg{width:100%;height:100%;display:block;overflow:visible}
+.mk-node{cursor:pointer}
+.mk-dot{transition:r .2s,fill .2s}
+.mk-node:hover .mk-dot,.mk-node.sel .mk-dot{fill:#fff}
+.mk-ring{fill:none;stroke:var(--accent);stroke-width:2;opacity:0;transition:opacity .2s}
+.mk-node.sel .mk-ring{opacity:1}
+.mk-label{font:600 11px Inter,sans-serif;fill:#C7CDD8;pointer-events:none}
+.route{stroke:var(--accent);stroke-width:1.5;fill:none;opacity:.32;stroke-dasharray:5 6}
+.route.anim{animation:dash 1s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-22}}
+.map-panel{background:var(--ink-2);border:1px solid var(--line-dark);border-radius:var(--r);padding:28px}
+.map-panel .counter{font-family:'Archivo';font-weight:900;font-size:60px;color:var(--accent);line-height:.9;letter-spacing:-.04em}
+.map-panel .counter small{display:block;font-size:14px;color:var(--muted-light);font-weight:600;margin-top:8px;letter-spacing:.04em}
+.map-panel h3{font-size:20px;font-weight:800;margin:18px 0 6px;color:#fff}
+.map-panel #mk-fact{color:var(--muted-light);font-size:14.5px;min-height:64px}
+.map-run{margin-top:18px;width:100%;justify-content:center}
+#toTop{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;border:0;cursor:pointer;display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:90;box-shadow:var(--shadow);transform:translateY(10px)}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+.v2-tilt{transition:transform .18s ease-out}
+@media(max-width:920px){.v2-grid,.map-wrap{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <span class="mono">CR</span>
+      <span>Christie Rugh<small>Commercial &amp; Growth Exec</small></span>
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="#about">About</a>
+      <a href="#numbers">Impact</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#work">Experience</a>
+      <a href="#case">Case Study</a>
+      <a href="#praise">Praise</a>
+      <a href="#contact" class="nav-cta">Let's connect</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">E-commerce · Marketplaces · Cross-border growth</span>
+      <h1>Commercial &amp; global growth executive who builds revenue engines <span class="pop">from zero.</span></h1>
+      <p class="lede">20+ years turning e-commerce, marketplace, and cross-border operations into measurable revenue. I stand up the commercial engine — <b>marketplaces, demand generation, CRM, and the teams that run them</b> — and scale it across borders and P&amp;Ls.</p>
+      <div class="hero-chips">
+        <span class="chip"><b>$275M+</b> GMV owned</span>
+        <span class="chip"><b>10</b> countries launched 0→1</span>
+        <span class="chip"><b>9-country</b> teams led</span>
+        <span class="chip"><b>20+</b> years</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" id="cta-email" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Get in touch
+        </a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/christierugh/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait-ring"></div>
+      <div class="portrait">
+        <img id="portrait-img" alt="Christie Rugh" style="display:none" />
+        <div class="mono-fallback" id="mono-fallback">CR</div>
+      </div>
+      <span class="portrait-badge">Open to leadership roles</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ NUMBERS ============ -->
+<section class="numbers" id="numbers">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>The track record, in numbers.</h2>
+      <p>Owned P&amp;Ls, built marketplaces from scratch, and scaled commercial teams across borders.</p>
+    </div>
+    <div class="num-grid reveal">
+      <div class="num-cell"><div class="num" data-target="275" data-prefix="$" data-suffix="M+">$275M+</div><div class="lbl">GMV owned (full P&amp;L)</div></div>
+      <div class="num-cell"><div class="num" data-target="42" data-prefix="$" data-suffix="M">$42M</div><div class="lbl">Marketplace GMV built from zero</div></div>
+      <div class="num-cell"><div class="num" data-target="10" data-suffix="">10</div><div class="lbl">Countries launched in 10 months</div></div>
+      <div class="num-cell"><div class="num" data-target="2.1" data-suffix="M" data-decimals="1">2.1M</div><div class="lbl">Packages delivered per year</div></div>
+      <div class="num-cell"><div class="num" data-target="100" data-suffix="K+">100K+</div><div class="lbl">Active B2C customers</div></div>
+      <div class="num-cell"><div class="num" data-target="26" data-prefix="" data-suffix="">26</div><div class="lbl">Team built from 1, across 9 countries</div></div>
+      <div class="num-cell"><div class="num" data-target="214" data-prefix="+" data-suffix="%">+214%</div><div class="lbl">Registrations YoY (Prime Day)</div></div>
+      <div class="num-cell"><div class="num" data-target="57" data-prefix="−" data-suffix="%">−57%</div><div class="lbl">Customer acquisition cost</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="sec about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="sec-tag">Profile</div>
+        <p class="big">Recognized for <span class="hl">clarity of thought, force multiplication, and results obsession.</span> Expert at solving problems beyond role scope, building scalable marketplace operations, and accelerating global growth.</p>
+        <div class="quote">"I believe meaningful growth happens through clarity, collaboration, and the balance of operational precision with inspired leadership."</div>
+      </div>
+      <div class="reveal">
+        <div class="sec-tag">Core strengths</div>
+        <div class="strengths">
+          <span class="tag">Global Expansion</span>
+          <span class="tag">Marketplace Growth</span>
+          <span class="tag">Revenue Strategy</span>
+          <span class="tag">Strategic Partnerships</span>
+          <span class="tag">P&amp;L Ownership</span>
+          <span class="tag">Cross-Border Commerce</span>
+          <span class="tag">Demand Generation</span>
+          <span class="tag">Leadership Development</span>
+          <span class="tag">Go-to-Market</span>
+        </div>
+        <p class="sec-sub" style="margin-top:24px">Currently VP, Sales &amp; Marketing at SkyPostal — leading cross-border commercial strategy for LATAM e-commerce sellers and U.S. DTC brands. Based in Florida; teams led across 9 countries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE ============ -->
+<section class="sec expertise" id="expertise">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-tag">What I lead</div>
+      <h2 class="sec-title">Three engines I build and scale.</h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <div class="n">01</div>
+        <h3>Leadership &amp; Strategy</h3>
+        <div class="desc">Guiding cross-functional teams toward measurable revenue growth.</div>
+        <ul>
+          <li>Executive leadership &amp; P&amp;L ownership</li>
+          <li>Global expansion strategy</li>
+          <li>Revenue growth &amp; GTM</li>
+          <li>Team building (1 → 26 across 9 countries)</li>
+        </ul>
+      </div>
+      <div class="exp-card reveal">
+        <div class="n">02</div>
+        <h3>E-Commerce &amp; Marketplace</h3>
+        <div class="desc">Driving LATAM expansion and marketplace performance at scale.</div>
+        <ul>
+          <li>Marketplace build &amp; management (0→1)</li>
+          <li>Cross-border commerce &amp; logistics</li>
+          <li>LATAM market entry</li>
+          <li>Seller enablement &amp; partnerships</li>
+        </ul>
+      </div>
+      <div class="exp-card reveal">
+        <div class="n">03</div>
+        <h3>Marketing &amp; Growth</h3>
+        <div class="desc">Turning data-driven insight into brand and revenue acceleration.</div>
+        <ul>
+          <li>Demand generation &amp; full-funnel</li>
+          <li>CRM &amp; lifecycle (built from zero)</li>
+          <li>Brand positioning &amp; partnerships</li>
+          <li>Customer journey &amp; retention</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<!-- V2: interactive impact calculator -->
+<section class="sec v2-tool" id="impact-calc">
+  <div class="wrap">
+    <div class="v2-head reveal">
+      <div class="sec-tag">Interactive · model the upside</div>
+      <h2 class="sec-title">What a 57% lower acquisition cost could do for you.</h2>
+      <p class="sec-sub">Christie cut customer acquisition cost 57% at Aeropost. Move the sliders to your own numbers and apply the same lever. Directional, not a promise.</p>
+    </div>
+    <div class="v2-grid">
+      <div class="calc-controls reveal">
+        <div class="calc-field">
+          <label>Monthly marketing spend <span class="val" id="o-spend">$80,000</span></label>
+          <input type="range" class="v2-range" id="c-spend" min="10000" max="1000000" step="5000" value="80000">
+        </div>
+        <div class="calc-field">
+          <label>Current acquisition cost (CAC) <span class="val" id="o-cac">$70</span></label>
+          <input type="range" class="v2-range" id="c-cac" min="10" max="300" step="1" value="70">
+        </div>
+        <div class="calc-field">
+          <label>Average order value (AOV) <span class="val" id="o-aov">$120</span></label>
+          <input type="range" class="v2-range" id="c-aov" min="20" max="500" step="5" value="120">
+        </div>
+      </div>
+      <div class="calc-results reveal">
+        <div class="big" id="r-cac">$30</div>
+        <div class="rlabel">Modeled new CAC, applying a 57% reduction</div>
+        <div class="calc-row">
+          <div><div class="v" id="r-now">1,143</div><div class="rlabel">Customers / mo now</div></div>
+          <div><div class="v pos" id="r-after">2,658</div><div class="rlabel">Modeled / mo (<span id="r-add">+1,515</span>)</div></div>
+        </div>
+        <div class="calc-bar"><span id="r-bar"></span></div>
+        <div class="calc-row" style="border-top:0;padding-top:14px">
+          <div><div class="v pos" id="r-rev">$182K</div><div class="rlabel">Added revenue / mo</div></div>
+          <div><div class="v pos" id="r-rev-yr">$2.2M</div><div class="rlabel">Annualized</div></div>
+        </div>
+        <p class="calc-note">Illustrative model applying Christie's documented 57% CAC reduction to your inputs. Not financial advice or a performance guarantee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec work" id="work">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-tag">Experience</div>
+      <h2 class="sec-title">25 years of building commercial growth.</h2>
+      <p class="sec-sub">Tap any role to expand the outcomes.</p>
+    </div>
+    <div class="work-list" id="work-list">
+
+      <div class="role open">
+        <div class="role-head">
+          <div class="role-yr">2024 — Now</div>
+          <div class="role-main">
+            <h3>VP, Sales &amp; Marketing</h3>
+            <div class="co"><b>SkyPostal, Inc.</b> · Miami, FL</div>
+          </div>
+          <div class="role-toggle">+</div>
+        </div>
+        <div class="role-body"><div class="role-body-inner">
+          <p class="headline">Lead sales, marketing &amp; BD for a cross-border logistics provider serving LATAM sellers and U.S. DTC brands — managing a shipping revenue portfolio across <span class="hl">50 clients, $50K–$2M+ deals.</span></p>
+          <ul>
+            <li>Secured Walmart Mexico, TiendMia, Buku Shipping and enterprise accounts via value-led consultative selling — shifting the narrative from logistics commoditization to unit-economics optimization, driving double-digit revenue growth.</li>
+            <li>Closed multimillion-dollar partnerships by mapping cross-border operational gaps to P&amp;L and contribution-margin impact at the C-suite level.</li>
+            <li>Built the outbound motion ground-up — ICP segmentation, messaging, multi-touch cadences, CRM pipeline — self-sourcing 60%+ of pipeline.</li>
+            <li>Cut sales cycle 50% through seller-enablement programs; launched campaigns driving +400% impressions, +200% follower growth, +30% qualified leads in 90 days.</li>
+            <li>Keynote speaker &amp; webinar host on LATAM e-commerce expansion.</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-yr">2021 — 2024</div>
+          <div class="role-main">
+            <h3>VP, Commercial</h3>
+            <div class="co"><b>Aeropost</b> · Doral, FL</div>
+          </div>
+          <div class="role-toggle">+</div>
+        </div>
+        <div class="role-body"><div class="role-body-inner">
+          <p class="headline">Built commercial operations from ground zero — a <span class="hl">26-person team across 9 countries</span> — owning full P&amp;L for a $275M+ GMV business, 2M+ annual packages, 100K+ active customers.</p>
+          <ul>
+            <li>Launched Aeropost's first regional marketplace &amp; seller portal — concept to live in 10 months — onboarding 1,000+ sellers and 2M+ SKUs across 10 countries; $42M Marketplace GMV, +34% YoY.</li>
+            <li>Built a regional cashback affiliate program with Rakuten, ShareASale &amp; eBay — monetizing $50M+ GMV.</li>
+            <li>Drove registrations +214% and conversions +32% YoY; cut CPR 57% and CPC 28% via a full attribution framework.</li>
+            <li>Grew active customers +56% YoY; reduced churn double digits; +25% engagement through a tiered loyalty platform.</li>
+            <li>Implemented Klaviyo CRM with 24 automated lifecycle flows across two business lines and 10 countries.</li>
+            <li>Generated $41M logistics revenue; leveraged 100+ Smart Locker locations to cut last-mile costs 50%+.</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-yr">2014 — 2021</div>
+          <div class="role-main">
+            <h3>Senior Director, Marketplace</h3>
+            <div class="co"><b>Sears Holdings Corporation</b> · Hoffman Estates, IL</div>
+          </div>
+          <div class="role-toggle">+</div>
+        </div>
+        <div class="role-body"><div class="role-body-inner">
+          <p class="headline">Directed marketplace operations across <span class="hl">400+ merchant accounts generating $125M+ annually</span>, leading U.S. and India-based teams.</p>
+          <ul>
+            <li>Increased operating profit +138% YoY — establishing marketplace as the most profitable online business unit.</li>
+            <li>Drove 100%+ YoY holiday revenue growth across Appliances, Fitness, Sports &amp; Electronics; lifted site conversion +18%.</li>
+            <li>Acquired and onboarded top-tier merchants: Overstock, Office Depot, Sansui, Hasbro, Keystone Automotive, TTI Floor Care, Genesco.</li>
+            <li>Redesigned seller-funded cashback programs generating $100K+ incremental monthly sales.</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-yr">2008 — 2014</div>
+          <div class="role-main">
+            <h3>Divisional Merchandise Manager &amp; Sr. Category Manager</h3>
+            <div class="co"><b>Sears Holdings Corporation</b> · Hoffman Estates, IL</div>
+          </div>
+          <div class="role-toggle">+</div>
+        </div>
+        <div class="role-body"><div class="role-body-inner">
+          <p class="headline">Owned full P&amp;L for Electronics &amp; Appliances e-commerce — assortment, pricing, marketing &amp; financial performance.</p>
+          <ul>
+            <li>Achieved +14% incremental margin while driving conversion +5%, RPV +40%, and online-to-store penetration +33%.</li>
+            <li>Developed the industry-leading ENERGY STAR / Cash for Appliances program; lifted Electronics CSAT +140 bps.</li>
+            <li>As Sr. Category Manager, led a merchant team of 8 across Toys &amp; Gaming — Gaming recognized by Nintendo as best-in-class; CSAT +32%.</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-yr">1999 — 2007</div>
+          <div class="role-main">
+            <h3>Senior Product Manager → Buyer, Televisions</h3>
+            <div class="co"><b>Affinion Loyalty Group</b> &amp; <b>Circuit City Stores</b> · Richmond, VA</div>
+          </div>
+          <div class="role-toggle">+</div>
+        </div>
+        <div class="role-body"><div class="role-body-inner">
+          <p class="headline">Managed a <span class="hl">$1B television category</span> at Circuit City, achieving 27% market share — the highest in 5 years.</p>
+          <ul>
+            <li>Grew sales revenue $373M and gross margin $10.5M after implementing the first Competitive Line Review.</li>
+            <li>Improved tube-TV margins +63%, store comps +5%, inventory turns +15%.</li>
+            <li>Grew 2006 Thanksgiving online sales $8.1M → $27M and Black Friday online $12.5M → $31M.</li>
+            <li>At Affinion: led product marketing for loyalty products across financial services &amp; travel; grew weekly revenue $40K → $65K.</li>
+          </ul>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDY ============ -->
+<section class="sec case" id="case">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-tag">Featured case study</div>
+      <h2 class="sec-title">Building a cross-border marketplace from zero.</h2>
+      <p class="sec-sub" style="color:#C7CDD8">Aeropost needed to transform from a logistics provider into a full marketplace — letting Latin American &amp; Caribbean consumers access U.S. products in a region where cross-border commerce is uniquely complex.</p>
+    </div>
+    <div class="case-stat-strip reveal">
+      <div class="case-stat"><div class="v" data-target="10" data-suffix="">10</div><div class="k">Months to first launch</div></div>
+      <div class="case-stat"><div class="v" data-target="10" data-suffix="">10</div><div class="k">Countries live</div></div>
+      <div class="case-stat"><div class="v" data-target="1000" data-suffix="+">1,000+</div><div class="k">Sellers onboarded</div></div>
+      <div class="case-stat"><div class="v" data-target="2" data-suffix="M+">2M+</div><div class="k">SKUs in catalog</div></div>
+    </div>
+
+    <div class="tabs reveal" id="tabs">
+      <button class="tab active" data-tab="0"><span class="tnum">01</span>Infrastructure</button>
+      <button class="tab" data-tab="1"><span class="tnum">02</span>Market Prioritization</button>
+      <button class="tab" data-tab="2"><span class="tnum">03</span>Seller Acquisition</button>
+      <button class="tab" data-tab="3"><span class="tnum">04</span>Growth Engine</button>
+      <button class="tab" data-tab="4"><span class="tnum">05</span>CRM &amp; Lifecycle</button>
+      <button class="tab" data-tab="5"><span class="tnum">06</span>Results</button>
+    </div>
+
+    <div class="panel active" data-panel="0">
+      <h3>Marketplace Infrastructure — 0 → 1 in 10 months</h3>
+      <div class="p-sub">Built a scalable, multi-country platform from scratch on an aggressive timeline.</div>
+      <div class="panel-cols">
+        <div><h4>What was built</h4><ul>
+          <li>Concept through launch in 10 months</li>
+          <li>Competitive UX benchmarking vs. Amazon &amp; eBay</li>
+          <li>Product taxonomy &amp; seller workflows</li>
+          <li>Integrated duty-calculation system</li>
+          <li>Multi-currency payment processing</li>
+        </ul></div>
+        <div><h4>Outcomes</h4><ul>
+          <li>Live marketplace in first country in 10 months</li>
+          <li>Scalable architecture for 9 more countries</li>
+          <li>Unified tech stack serving both business lines</li>
+          <li>Cross-functional alignment achieved</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="1">
+      <h3>Market Prioritization &amp; Phased Rollout</h3>
+      <div class="p-sub">Evaluated a 32-country footprint against weighted criteria to sequence launches.</div>
+      <div class="panel-cols">
+        <div><h4>Decision framework</h4><ul>
+          <li>GMV potential &amp; cross-border purchase behavior</li>
+          <li>Regulatory environment &amp; customs complexity</li>
+          <li>Infrastructure &amp; warehouse/delivery readiness</li>
+          <li>Operational complexity &amp; locker penetration</li>
+          <li>Competitive positioning</li>
+        </ul></div>
+        <div><h4>Smart Locker advantage</h4><ul>
+          <li>Leveraged 100+ Smart Lockers as a differentiator</li>
+          <li>Bahamas: &gt;99% locker adoption</li>
+          <li>Barbados: &gt;50% locker adoption</li>
+          <li>&gt;50% reduction in last-mile delivery cost</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="2">
+      <h3>Seller Acquisition &amp; Supply Build</h3>
+      <div class="p-sub">Supply-first: built the complete supply side before launching demand.</div>
+      <div class="panel-cols">
+        <div><h4>Execution</h4><ul>
+          <li>Personal recruitment leveraging retail relationships</li>
+          <li>Educated sellers on the $30B+ LATAM opportunity</li>
+          <li>Built a BD team to scale outreach systematically</li>
+          <li>Created seller-enablement tools &amp; support</li>
+        </ul></div>
+        <div><h4>Pre-launch supply</h4><ul>
+          <li>~1,000 sellers onboarded</li>
+          <li>~2M SKUs uploaded and live</li>
+          <li>Avg 2,000 SKUs per seller</li>
+          <li>Avoided the "cold start problem"</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="3">
+      <h3>Full-Funnel Growth Engine</h3>
+      <div class="p-sub">Consolidated three competing agencies into one unified performance engine.</div>
+      <div class="panel-cols">
+        <div><h4>Channel strategy</h4><ul>
+          <li>Awareness — platform prospecting, product creative</li>
+          <li>Consideration — "how it works" content, duty calculator</li>
+          <li>Conversion — registration &amp; buyer-activation optimization</li>
+          <li>Retention — retargeting, CRM, cashback program</li>
+        </ul></div>
+        <div><h4>Smart Locker geo-targeting</h4><ul>
+          <li>Location-based ads around 100+ pickup points</li>
+          <li>Drove locker adoption to 17% average</li>
+          <li>Reduced last-mile costs &gt;50%</li>
+          <li>Created a third-party revenue opportunity</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="4">
+      <h3>CRM &amp; Lifecycle Marketing — built from zero</h3>
+      <div class="p-sub">Klaviyo-based CRM with 24 automated lifecycle flows across two business lines.</div>
+      <div class="panel-cols">
+        <div><h4>Architecture</h4><ul>
+          <li>24 automated behavioral flows</li>
+          <li>Country-level personalization (language, currency, duties)</li>
+          <li>Multi-dimensional segmentation by shopping behavior</li>
+          <li>Category &amp; purchase-frequency triggers</li>
+        </ul></div>
+        <div><h4>Key flows &amp; programs</h4><ul>
+          <li>Welcome, Activation, Engagement, Retention, Winback</li>
+          <li>Q1 2024 cashback with Rakuten, ShareASale, eBay — $50M+ GMV</li>
+          <li>Affiliate marketing extended to B2B customers</li>
+          <li>Goal: lift baseline from 20 packages/year per user</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="5">
+      <h3>Business Impact &amp; Results</h3>
+      <div class="p-sub">Prime Day execution + full-business scale.</div>
+      <div class="panel-cols">
+        <div><h4>Growth metrics</h4><ul>
+          <li>Active customer base +56% YoY</li>
+          <li>Retention engagement +25%</li>
+          <li>Cost per registration −57% · CPC −28%</li>
+          <li>Prime Day: registrations +214%, conversion +32% YoY</li>
+        </ul></div>
+        <div><h4>Scale (full business)</h4><ul>
+          <li>$275M+ GMV transported · $42M revenue</li>
+          <li>2.1M packages delivered</li>
+          <li>100,000+ active B2C · 1,000+ active B2B</li>
+          <li>Team scaled 1 → 26 · 30+ country footprint</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRAISE ============ -->
+<!-- V2: interactive cross-border markets map -->
+<section class="sec v2-map" id="markets">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-tag">Interactive · cross-border footprint</div>
+      <h2 class="sec-title">From one hub to 10 countries.</h2>
+      <p class="sec-sub" style="color:#C7CDD8">Tap a market to see what shipped there, or run the rollout that went live in 10 months.</p>
+    </div>
+    <div class="map-wrap">
+      <div class="map-stage reveal"><svg viewBox="0 0 560 400" id="map-svg" aria-label="Cross-border market map"></svg></div>
+      <div class="map-panel reveal">
+        <div class="counter"><span id="mk-count">10</span><small> / 10 countries live</small></div>
+        <h3 id="mk-name">Tap a market</h3>
+        <p id="mk-fact">Each node is a market Christie helped stand up: supply, demand, logistics, or all three.</p>
+        <button class="btn btn-primary map-run" id="mk-run">► Run the 10-country rollout</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec praise" id="praise">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="sec-tag">What colleagues say</div>
+      <h2 class="sec-title">"If you want to get something done, you need Christie leading."</h2>
+    </div>
+    <div class="rec-track" id="rec-track">
+      <div class="rec">
+        <div class="mark">"</div>
+        <div class="theme">Visionary Leadership</div>
+        <blockquote>Christie demonstrated exceptional skill and dedication, significantly contributing to the company's growth. Her keen understanding of market dynamics and innovative approach to business development resulted in numerous successful partnerships and increased revenue streams.</blockquote>
+        <div class="who"><div class="av">SB</div><div><div class="nm">Sebastian Bastian</div><div class="rl">CEO &amp; Serial Entrepreneur · Senior to Christie at Aeropost</div></div></div>
+      </div>
+      <div class="rec">
+        <div class="mark">"</div>
+        <div class="theme">Relentless Execution</div>
+        <blockquote>Christie is a seasoned leader with a relentless drive for execution and progress. Her ability to adapt and thrive in various roles and projects is truly commendable. Her leadership, 'go get it' attitude, and tenacity will be an asset to any organization.</blockquote>
+        <div class="who"><div class="av">MJ</div><div><div class="nm">Mikael Jorkvist</div><div class="rl">CTO, Aeropost · Worked on the same team</div></div></div>
+      </div>
+      <div class="rec">
+        <div class="mark">"</div>
+        <div class="theme">Cross-Functional Collaboration</div>
+        <blockquote>If you want to get something done, then you need Christie Rugh leading your team. She is organized, data-driven and knows how to lead a team toward the accomplishment of their goals. She is extremely insightful, detail-oriented, meticulous and a fantastic collaborative partner.</blockquote>
+        <div class="who"><div class="av">SO</div><div><div class="nm">Suzanne Orzech</div><div class="rl">Customer Success Manager, Klaviyo · Strategic POC for Christie's team</div></div></div>
+      </div>
+      <div class="rec">
+        <div class="mark">"</div>
+        <div class="theme">Mentorship &amp; Team Growth</div>
+        <blockquote>One of the most inspiring leaders I have ever worked with. Her clear vision and strategic thinking consistently guided our team toward achieving ambitious goals. Her dedication to mentorship and professional development helped me hone my skills and confidence.</blockquote>
+        <div class="who"><div class="av">SZ</div><div><div class="nm">Shawn Zavsza</div><div class="rl">Strategic Account Manager · Reported to Christie at Aeropost &amp; Transformco</div></div></div>
+      </div>
+    </div>
+    <div class="rec-nav">
+      <button class="rec-btn" id="rec-prev" aria-label="Previous">‹</button>
+      <button class="rec-btn" id="rec-next" aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOMAIN + EDUCATION ============ -->
+<section class="split">
+  <div class="domain">
+    <div class="inner reveal">
+      <div class="sec-tag">Category depth</div>
+      <h2 class="sec-title">Animal health, veterinary &amp; equine.</h2>
+      <p class="sec-sub" style="color:#C7CDD8">A genuine domain edge for pet &amp; animal-health commerce — built on lived, hands-on experience.</p>
+      <ul>
+        <li>Lifelong animal owner with deep, hands-on experience across canine and equine health, wellness &amp; veterinary care.</li>
+        <li>Active competitor at the Winter Equestrian Festival (Wellington, FL) — the world's largest hunter/jumper circuit.</li>
+        <li>Extensive experience coordinating with veterinarians: prescriptions, supplements, diagnostics, rehab &amp; long-term care.</li>
+        <li>Strong familiarity with subscription-based wellness &amp; supplement programs and high-margin health SKUs.</li>
+        <li>Deep understanding of high-trust, regulated environments where animal welfare and profitable growth must align.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="edu">
+    <div class="inner reveal">
+      <div class="sec-tag" style="color:#fff">Education &amp; recognition</div>
+      <h2 class="sec-title">Credentials.</h2>
+      <div class="edu-item">
+        <h3>B.S. Business Management</h3>
+        <span class="badge">Summa Cum Laude</span>
+        <p>Lynn University — Boca Raton, FL</p>
+      </div>
+      <div class="edu-item">
+        <h3>AI: Business Strategies &amp; Applications</h3>
+        <span class="badge">Executive Education</span>
+        <p>University of California, Berkeley</p>
+      </div>
+      <div class="speaking">
+        <h4>Speaking &amp; features</h4>
+        <div class="feat-grid">
+          <span class="feat">Prosper Show — Guest Speaker</span>
+          <span class="feat">White Label Expo Speaker</span>
+          <span class="feat">Amazon Seller Summits</span>
+          <span class="feat">AI Chain Reaction — Ep. 21</span>
+          <span class="feat">Agency Operators Podcast — Ep. 40</span>
+          <span class="feat">"$200B LATAM E-Commerce" — Ep. 418</span>
+          <span class="feat">Patented Inventor</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-tag reveal">Let's connect</div>
+    <h2 class="reveal">Ready to lead your next <span class="pop">commercial growth</span> chapter.</h2>
+    <p class="reveal">Open to leadership opportunities in e-commerce, commercial growth, and operations — at your company or across the network.</p>
+    <div class="contact-cta reveal">
+      <a class="btn btn-primary" id="contact-email" href="https://www.linkedin.com/in/christierugh/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email Christie
+      </a>
+      <a class="btn btn-ghost" href="tel:+18049289705">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        804.928.9705
+      </a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/christierugh/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        Connect on LinkedIn
+      </a>
+    </div>
+    <div class="footer-meta">
+      <span class="brand"><span class="mono">CR</span> Christie Rugh</span>
+      <span>Commercial &amp; Global Growth Executive · E-commerce · Marketplaces · Cross-border</span>
+    </div>
+  </div>
+</section>
+
+<script>
+/* ============================================================
+   ⚙️  EDIT HERE — swap in Christie's real details
+   ============================================================ */
+const CONFIG = {
+  // Paste a direct image URL for her headshot (LinkedIn photo link or any hosted image).
+  // Leave "" to show the clean "CR" monogram. If a URL is set but fails to load,
+  // it automatically falls back to the monogram — so it never looks broken.
+  photoUrl: "images/christie-rugh.jpg",
+
+  // Paste Christie's email to turn the "Email" buttons into real mailto links.
+  // Leave "" and the Email buttons gracefully point to her LinkedIn instead.
+  email: ""
+};
+
+/* ---- apply photo ---- */
+(function(){
+  if (CONFIG.photoUrl) {
+    const img = document.getElementById('portrait-img');
+    const mono = document.getElementById('mono-fallback');
+    img.onload = () => { img.style.display='block'; mono.style.display='none'; };
+    img.onerror = () => { img.style.display='none'; mono.style.display='grid'; };
+    img.src = CONFIG.photoUrl;
+  }
+})();
+
+/* ---- apply email ---- */
+(function(){
+  if (CONFIG.email) {
+    const href = 'mailto:' + CONFIG.email;
+    ['cta-email','contact-email'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) { el.setAttribute('href', href); el.removeAttribute('target'); }
+    });
+  }
+})();
+
+document.documentElement.classList.add('js');
+
+/* ---- scroll progress bar ---- */
+const progress = document.getElementById('progress');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  progress.style.width = pct + '%';
+}, {passive:true});
+
+/* ---- mobile menu ---- */
+const burger = document.getElementById('burger');
+const navlinks = document.getElementById('navlinks');
+burger.addEventListener('click', () => navlinks.classList.toggle('show'));
+navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navlinks.classList.remove('show')));
+
+/* ---- reveal on scroll ---- */
+const revObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); revObs.unobserve(e.target);} });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+/* ---- count-up numbers ---- */
+function animateNum(el){
+  const target = parseFloat(el.dataset.target);
+  const decimals = parseInt(el.dataset.decimals || '0', 10);
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+  const dur = 1400; const start = performance.now();
+  function fmt(v){
+    let n = v.toFixed(decimals);
+    if (decimals === 0) n = Math.round(v).toLocaleString('en-US');
+    return prefix + n + suffix;
+  }
+  function step(now){
+    const p = Math.min((now - start)/dur, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = fmt(target * eased);
+    if (p < 1) requestAnimationFrame(step); else el.textContent = fmt(target);
+  }
+  requestAnimationFrame(step);
+}
+const numObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting){ animateNum(e.target); numObs.unobserve(e.target);} });
+}, {threshold:.4});
+document.querySelectorAll('.num,.case-stat .v').forEach(el => numObs.observe(el));
+
+/* ---- active nav link ---- */
+const sections = ['about','numbers','expertise','work','case','praise','contact'];
+const linkMap = {};
+document.querySelectorAll('.navlinks a').forEach(a => {
+  const id = a.getAttribute('href').slice(1); if (sections.includes(id)) linkMap[id] = a;
+});
+const navObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting){
+      Object.values(linkMap).forEach(a => a.classList.remove('active'));
+      if (linkMap[e.target.id]) linkMap[e.target.id].classList.add('active');
+    }
+  });
+}, {rootMargin:'-45% 0px -50% 0px'});
+sections.forEach(id => { const s = document.getElementById(id); if (s) navObs.observe(s); });
+
+/* ---- experience accordion ---- */
+document.querySelectorAll('.role-head').forEach(head => {
+  head.addEventListener('click', () => {
+    const role = head.parentElement;
+    const body = role.querySelector('.role-body');
+    const isOpen = role.classList.contains('open');
+    document.querySelectorAll('.role').forEach(r => {
+      r.classList.remove('open');
+      r.querySelector('.role-body').style.maxHeight = null;
+    });
+    if (!isOpen){ role.classList.add('open'); body.style.maxHeight = body.scrollHeight + 'px'; }
+  });
+});
+// open first role on load
+window.addEventListener('load', () => {
+  const first = document.querySelector('.role.open .role-body');
+  if (first) first.style.maxHeight = first.scrollHeight + 'px';
+});
+
+/* ---- case study tabs ---- */
+const tabs = document.querySelectorAll('.tab');
+const panels = document.querySelectorAll('.panel');
+tabs.forEach(tab => tab.addEventListener('click', () => {
+  tabs.forEach(t => t.classList.remove('active'));
+  panels.forEach(p => p.classList.remove('active'));
+  tab.classList.add('active');
+  document.querySelector('.panel[data-panel="'+tab.dataset.tab+'"]').classList.add('active');
+}));
+
+/* ---- recommendations carousel ---- */
+const track = document.getElementById('rec-track');
+function recStep(){ const card = track.querySelector('.rec'); return card ? card.offsetWidth + 22 : 360; }
+document.getElementById('rec-next').addEventListener('click', () => track.scrollBy({left:recStep(),behavior:'smooth'}));
+document.getElementById('rec-prev').addEventListener('click', () => track.scrollBy({left:-recStep(),behavior:'smooth'}));
+
+/* ===== V2 interactive modules ===== */
+(function(){ /* nav links */
+  const nl=document.getElementById('navlinks'); if(!nl) return;
+  const cta=nl.querySelector('.nav-cta');
+  [['#impact-calc','Calculator'],['#markets','Markets']].forEach(function(p){
+    if(nl.querySelector('a[href="'+p[0]+'"]')) return;
+    var a=document.createElement('a');a.href=p[0];a.textContent=p[1];
+    a.addEventListener('click',function(){nl.classList.remove('show');});
+    if(cta) nl.insertBefore(a,cta); else nl.appendChild(a);
+  });
+})();
+(function(){ /* impact calculator */
+  const $=function(id){return document.getElementById(id);};
+  const spend=$('c-spend'),cac=$('c-cac'),aov=$('c-aov'); if(!spend) return;
+  const money=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+  const compact=function(n){n=Math.round(n);if(n>=1e6)return '$'+(n/1e6).toFixed(1)+'M';if(n>=1e3)return '$'+Math.round(n/1e3)+'K';return '$'+n;};
+  function upd(){
+    var s=+spend.value,c=+cac.value,a=+aov.value,nc=c*0.43;
+    var now=s/c,after=s/nc,add=after-now;
+    $('o-spend').textContent=money(s);$('o-cac').textContent=money(c);$('o-aov').textContent=money(a);
+    $('r-cac').textContent=money(nc);
+    $('r-now').textContent=Math.round(now).toLocaleString('en-US');
+    $('r-after').textContent=Math.round(after).toLocaleString('en-US');
+    $('r-add').textContent='+'+Math.round(add).toLocaleString('en-US');
+    $('r-rev').textContent=compact(add*a);
+    $('r-rev-yr').textContent=compact(add*a*12);
+    $('r-bar').style.width=((add/after)*100).toFixed(0)+'%';
+  }
+  [spend,cac,aov].forEach(function(el){el.addEventListener('input',upd);}); upd();
+})();
+(function(){ /* markets map */
+  const svg=document.getElementById('map-svg'); if(!svg) return;
+  const NS='http://www.w3.org/2000/svg';
+  const hub={x:150,y:130,name:'United States',fact:'Origin hub: US DTC brands and retail supply feeding every market.'};
+  const markets=[
+    {x:250,y:255,name:'Mexico',fact:'Walmart Mexico secured as an enterprise cross-border account.'},
+    {x:430,y:330,name:'Brazil',fact:'Amazon Brazil PRC market entry, featured Q and A and roadmap.'},
+    {x:355,y:300,name:'Ecuador',fact:'LATAM demand market, featured in cross-border growth analysis.'},
+    {x:300,y:150,name:'Bahamas',fact:'Over 99% Smart Locker adoption, last-mile cost cut in half.'},
+    {x:385,y:188,name:'Barbados',fact:'Over 50% Smart Locker adoption, a proprietary last-mile moat.'},
+    {x:475,y:240,name:'+ more markets',fact:'10 marketplace countries launched, 30+ country delivery footprint.'}
+  ];
+  markets.forEach(function(m){var p=document.createElementNS(NS,'path');p.setAttribute('d','M'+hub.x+' '+hub.y+' Q '+((hub.x+m.x)/2)+' '+(Math.min(hub.y,m.y)-30)+' '+m.x+' '+m.y);p.setAttribute('class','route');svg.appendChild(p);m._route=p;});
+  function setPanel(n,f){document.getElementById('mk-name').textContent=n;document.getElementById('mk-fact').textContent=f;}
+  function makeNode(m,r){
+    var g=document.createElementNS(NS,'g');g.setAttribute('class','mk-node');g.setAttribute('transform','translate('+m.x+' '+m.y+')');
+    var ring=document.createElementNS(NS,'circle');ring.setAttribute('r',r+7);ring.setAttribute('class','mk-ring');
+    var dot=document.createElementNS(NS,'circle');dot.setAttribute('r',r);dot.setAttribute('class','mk-dot');dot.setAttribute('fill','#FF3D2E');
+    var left=m.x>330;var lab=document.createElementNS(NS,'text');lab.setAttribute('class','mk-label');lab.setAttribute('x',left?-(r+8):r+8);lab.setAttribute('y',4);lab.setAttribute('text-anchor',left?'end':'start');lab.textContent=m.name;
+    g.appendChild(ring);g.appendChild(dot);g.appendChild(lab);
+    g.addEventListener('mouseenter',function(){setPanel(m.name,m.fact);});
+    g.addEventListener('click',function(){var ns=document.querySelectorAll('.mk-node');for(var k=0;k<ns.length;k++)ns[k].classList.remove('sel');g.classList.add('sel');setPanel(m.name,m.fact);});
+    svg.appendChild(g);m._g=g;
+  }
+  makeNode(hub,9);markets.forEach(function(m){makeNode(m,7);});
+  var allNodes=[hub].concat(markets);
+  var countEl=document.getElementById('mk-count');
+  var runBtn=document.getElementById('mk-run');
+  if(runBtn) runBtn.addEventListener('click',function(){
+    allNodes.forEach(function(n){n._g.style.transition='opacity .4s';n._g.style.opacity=0;});
+    markets.forEach(function(m){m._route.style.opacity=0;m._route.classList.remove('anim');});
+    countEl.textContent='0';var i=0;
+    function reveal(){
+      if(i<allNodes.length){allNodes[i]._g.style.opacity=1;if(i>0){markets[i-1]._route.style.opacity='';markets[i-1]._route.classList.add('anim');}i++;setTimeout(reveal,280);}
+      else{var v=0;var t=setInterval(function(){v++;countEl.textContent=v;if(v>=10)clearInterval(t);},80);}
+    }
+    setTimeout(reveal,200);
+  });
+})();
+(function(){ /* back-to-top + card tilt */
+  var bt=document.createElement('button');bt.id='toTop';bt.setAttribute('aria-label','Back to top');
+  bt.innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>';
+  document.body.appendChild(bt);
+  bt.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'});});
+  addEventListener('scroll',function(){bt.classList.toggle('show',scrollY>700);},{passive:true});
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+    document.querySelectorAll('.card,.exp-card,.step,.prob,.stat,.case-stat').forEach(function(el){
+      el.classList.add('v2-tilt');
+      el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect();var px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;el.style.transform='perspective(800px) rotateY('+(px*5).toFixed(2)+'deg) rotateX('+(-py*5).toFixed(2)+'deg) translateY(-4px)';});
+      el.addEventListener('mouseleave',function(){el.style.transform='';});
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
