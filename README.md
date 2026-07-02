@@ -29,3 +29,5 @@ This repo is meant to be pushed to `christierugh/christierugh.github.io` (a GitH
    - `www` → `christierugh.github.io`
 
 5. DNS changes can take anywhere from a few minutes to 24 hours to propagate. Once they do, check the "Enforce HTTPS" box in Settings → Pages so the site serves over `https://christierugh.com`.
+
+<!-- redeploy: republish latest main (2026-07-02) -->
